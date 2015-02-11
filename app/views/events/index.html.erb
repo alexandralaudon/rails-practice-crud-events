@@ -7,7 +7,8 @@
     <th> Capacity </th>
     <th> Date </th>
     <th> Requires ID </th>
-    <th>
+    <th> Edit </th>
+    <th> Delete </th>
 
     </th>
   </thead>
@@ -32,6 +33,10 @@
         <td>
           <%= link_to "edit", edit_event_path(event) %>
         </td>
+        <td>
+          <%= link_to "delete", event_path(event), method: :delete %>
+        </td>
+
       </tr>
     <% end %>
   </tbody>
